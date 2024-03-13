@@ -24,13 +24,17 @@
   </head>
 <body>
   <div class="container">
-  <h1>Muath Ai practionar</h1>
+  <h1 class="text-center mt-2 mb-4">Muath Ai practionar</h1>
    <img class="img-fluid" id="banner" scr="https://c9ede330-eca9-4390-a384-8e5c227b1af9-00-qn5tohzk21gm.sisko.replit.dev/static/banner.jpg"
 height= "320px">
-<h1 clsss="text-center mt-2 mb-4"">Our student Story</h1>
+<h1 class="text-center mt-2 mb-4">Our student Story</h1>
 <p class="lead">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like.</p>
-<h2 class="text-center mt-2 mb-4"">My project</h2>
-<p class="lead">TODO - Show the projects here</p>
+<h2 class="text-center mt-2 mb-4">My project</h2>
+<div>
+{%for pro in projects%}
+ {% include 'projectslist.html' %}
+{%endfor%}
+</div>
 <div class="text-center">
 <button class="btn btn-primary btn-lg">Contact us</button>
 <p class="mt-4">Copyrigth 2024, Muath Ai practionar</p>
